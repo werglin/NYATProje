@@ -16,6 +16,7 @@ public class KullaniciVeriTabani {
 						if(kayitliAD.equals(kullaniciAd))
 						{
 							retBool=true;
+							break;
 						}
 						else
 						{

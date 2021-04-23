@@ -28,6 +28,8 @@ public class GirisArayuz {
 			else
 			{
 				System.out.println("Giris basarisiz...");
+				System.out.println();
+				System.out.println();
 			}
 		}
 		cin.close();
