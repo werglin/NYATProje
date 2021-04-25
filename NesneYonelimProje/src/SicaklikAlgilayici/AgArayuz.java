@@ -19,6 +19,7 @@ public class AgArayuz {
 				System.out.println("3-)Sicaklik Gonder");
 				System.out.println("4-)Cikis");
 				secim=cin.nextInt();
+				beklet();
 				AnaIslemPlatform anaPlat=new AnaIslemPlatform();
 				String cikti=anaPlat.Islem(secim);
 				clearCons();
@@ -27,5 +28,18 @@ public class AgArayuz {
 				System.out.println();
 			}while(secim!=4);
 			cin.close();
+		}
+		
+		
+		
+		public void beklet()
+		{
+			clearCons();
+			System.out.println("islem yapiliyor...");
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 		}
 }
